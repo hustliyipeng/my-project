@@ -1,15 +1,18 @@
 <template>
   <div>
-    my-demo
+    my-demo11
   </div>
 </template>
 
 <script>
 /* eslint-disable */
+import res from './res.jsonn';
 export default {
   props: {},
   data() {
-    return {};
+    return {
+      res: res,
+    };
   },
   computed: {},
   created() {},

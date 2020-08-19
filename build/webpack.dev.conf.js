@@ -20,6 +20,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
+  mode: 'development',
 
   // these devServer options should be customized in /config/index.js
   devServer: {
@@ -65,7 +66,15 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    new webpack.LoaderOptionsPlugin(
+      {
+        minimize: true,
+        debug: false,
+        options: {
+          context: __dirname
+        }
+      })
   ]
 })
 
@@ -89,7 +98,6 @@ module.exports = new Promise((resolve, reject) => {
           ? utils.createNotifierCallback()
           : undefined
       }))
-      console.log('devWebpackConfig===>', devWebpackConfig);
       resolve(devWebpackConfig)
     }
   })

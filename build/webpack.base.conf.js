@@ -4,7 +4,7 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -24,6 +24,7 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -45,6 +46,10 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
+      },
+      {
+        test: /\.jsonn$/,
+        loader: 'json-loader',
       },
       {
         test: /\.js$/,

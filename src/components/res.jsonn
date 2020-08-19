@@ -1,0 +1,145 @@
+{
+    "response": {
+        "error_code": 0,
+        "error_message": "OK",
+        "hint_message": ""
+    },
+    "qingqing_stage_feedback_id": "139378399989",
+    "grade_course": {
+        "grade_id": 7,
+        "grade_name": "初中一年级",
+        "course_id": 3,
+        "course_name": "英语",
+        "grade_short_name": "初一"
+    },
+    "student_info": {
+        "qingqing_user_id": "324742104",
+        "user_type": "student",
+        "head_image": "",
+        "nick": "李贻鹏",
+        "sex": "male",
+        "new_head_image": "/headimg/202005/26/{0}265fefb7-3815-4361-a3ef-e47a652d076b.jpg"
+    },
+    "teacher_info": {
+        "qingqing_user_id": "755874993",
+        "user_type": "teacher",
+        "head_image": "",
+        "nick": "勿动李贻鹏账号4850",
+        "sex": "unknown",
+        "new_head_image": "/teacher_headimg/202005/d9/{0}d9152fc9-3587-41c4-a599-94df6a1df9a5.jpg"
+    },
+    "stage_feedback_time": {
+        "start_time": 1596384000000,
+        "end_time": 1596470400000
+    },
+    "feedback_status": "wait_stage_feedback_status",
+    "app_channel": "qingqing_education_app_channel",
+    "course_praise_moudles": [
+        {
+            "start_class_time": 1596421763000,
+            "teaching_content": "听力对话专项训练综合训练（初）",
+            "course_expression_content": "Cvvcc"
+        },
+        {
+            "start_class_time": 1596421762000,
+            "teaching_content": "听力短文细节题专项训练（初）",
+            "course_expression_content": "1"
+        },
+        {
+            "start_class_time": 1596421760000,
+            "course_expression_content": ""
+        }
+    ],
+    "course_expression_module": {
+        "previous_stage_score": {
+            "participation_score": 4.0,
+            "focus_score": 3.0,
+            "knowledge_mastery_score": 5.0
+        },
+        "stage_score": {
+            "participation_score": 2.6666666667,
+            "focus_score": 2.6666666667,
+            "knowledge_mastery_score": 3.0
+        }
+    },
+    "homework_answer_module": {
+        "homework_items": [
+            {
+                "answer_id": 122659,
+                "homework_name": "08月05日作业",
+                "homework_answer_status": "expired_common_homework_answer_status",
+                "assign_time": 1596623923000
+            },
+            {
+                "answer_id": 122661,
+                "homework_name": "08月04日作业",
+                "homework_answer_status": "expired_common_homework_answer_status",
+                "assign_time": 1596520465000
+            },
+            {
+                "answer_id": 122662,
+                "homework_name": "08月03日作业",
+                "homework_answer_status": "expired_common_homework_answer_status",
+                "assign_time": 1596452223000
+            }
+        ]
+    },
+    "study_frequency_module": {
+        "course_hours": 80
+    },
+    "outlines": [
+        {
+            "outline_id": 11601,
+            "stage_goal": "听力短文填空",
+            "outline_no": 3,
+            "course_content": [
+                {
+                    "course_content_id": 11062,
+                    "content": "巧解听力短文单选题（初）",
+                    "sort_num": 1,
+                    "course_content_status": "published_teach_plan_course_content_status"
+                },
+                {
+                    "course_content_id": 11063,
+                    "content": "巧解听力短文填空题同步（初）",
+                    "sort_num": 2,
+                    "course_content_status": "published_teach_plan_course_content_status"
+                },
+                {
+                    "course_content_id": 11064,
+                    "content": "巧解听力短文填空题提高（初）",
+                    "sort_num": 3,
+                    "course_content_status": "published_teach_plan_course_content_status"
+                },
+                {
+                    "course_content_id": 11065,
+                    "content": "巧解听力短文填空题拓展（初）",
+                    "sort_num": 4,
+                    "course_content_status": "published_teach_plan_course_content_status"
+                }
+            ],
+            "plan_id": 5139,
+            "process_status": "init_teach_plan_outline_process_status"
+        },
+        {
+            "outline_id": 11917,
+            "stage_goal": "22",
+            "outline_no": 4,
+            "course_content": [
+                {
+                    "course_content_id": 11103,
+                    "content": "22",
+                    "sort_num": 1,
+                    "course_content_status": "published_teach_plan_course_content_status"
+                }
+            ],
+            "plan_id": 5139,
+            "process_status": "init_teach_plan_outline_process_status"
+        }
+    ],
+    "statistics_detail": {
+        "thumbup_detail": {},
+        "study_hour_time": 8.0
+    },
+    "last_exam_item": {}
+}
