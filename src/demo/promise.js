@@ -10,8 +10,10 @@ class promise2 {
         this.resolveQueue = []
         this.rejectQueue = []
         const resolve = (data) => {
-            console.log('resolve', data);
-            this.changeStatus(data, RESOLVE, this.resolveQueue)
+            // console.log('resolve', data);
+            setTimeout(() => {
+                this.changeStatus(data, RESOLVE, this.resolveQueue)
+            }, 0);
         }
         const reject = (data) => {
             this.changeStatus(data, REJECTED, this.rejectQueue)
@@ -29,7 +31,7 @@ class promise2 {
         return new promise2((resoleve, reject) => {
             const fullfill = () => {
                 var res = resolveCb(this.value)
-                console.log('res', res);
+                // console.log('res', res);
                 resoleve(res)
             }
             this.resolveQueue.push(fullfill)
@@ -148,19 +150,17 @@ class promise2 {
 
 }
 const exec = (resolve, reject) => {
-    setTimeout(() => {
-        resolve(22)
-    }, 100);
+    resolve(22)
 }
 const p = new promise2(exec)
 p.then((data) => {
-    setTimeout(() => {
-        console.log('then1', data);
-        return data
-    }, 3000);
+    console.log('then1', data);
+    return data
 }).then((data) => {
     console.log('then2', data);
     return data
 }).then((data) => {
     console.log('then3', data);
 })
+
+console.log('444');
