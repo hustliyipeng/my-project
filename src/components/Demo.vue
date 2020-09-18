@@ -1,22 +1,25 @@
 <template>
-  <div>
-    my-demo11
-  </div>
+  <div>{{res2}}</div>
 </template>
 
 <script>
 /* eslint-disable */
-import res from './res.jsonn';
+import res from "./res.jsonn";
 export default {
   props: {},
   data() {
     return {
       res: res,
+      res2: "22",
     };
   },
   computed: {},
   created() {},
-  mounted() {},
+  mounted() {
+    var res = this.res2;
+    res = 444;
+    this.res2 += 1;
+  },
   methods: {},
   components: {},
 };
