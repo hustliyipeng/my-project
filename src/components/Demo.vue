@@ -16,7 +16,7 @@ export default {
   computed: {},
   created() {},
   mounted() {
-    var res = this.res2;
+    var res = this.res2?.a;
     res = 444;
     this.res2 += 1;
   },
